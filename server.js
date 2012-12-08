@@ -47,6 +47,28 @@ app.get('/create-task', function(req,res){
   res.render('tasks/new.ejs', locals);
 });
 
+app.get('/complete-task', function(req,res){
+  locals = {
+    title: 		 'EndAtrocities.com',
+    description: '...',
+    author: 	 'Brent Daugherty',
+    _layoutFile: 'layout.ejs'
+  };
+
+  res.render('tasks/getalert.ejs', locals);
+});
+
+app.post('/create-task', function(req,res){
+  locals = {
+    title: 		 'EndAtrocities.com',
+    description: '...',
+    author: 	 'Brent Daugherty',
+    _layoutFile: 'layout.ejs'
+  };
+
+  res.render('tasks/new.ejs', locals);
+});
+
 /* The 404 Route (ALWAYS Keep this as the last route) */
 app.get('/*', function(req, res){
   res.render('404.ejs', locals);
