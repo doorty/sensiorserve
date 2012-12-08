@@ -44,6 +44,7 @@ app.get('/create-task', function(req,res){
   };
 
   res.render('tasks/new.ejs', locals);
+  res.render('tasks/new.ejs', locals);
 });
 
 /* The 404 Route (ALWAYS Keep this as the last route) */

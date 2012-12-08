@@ -1,0 +1,37 @@
+.dashboard-img{
+  border-radius:5%;
+  width:70%;
+}
+
+.dashboard-list-middle h4{
+
+}
+
+#dashboard-listing .dashboard-list-middle{
+  margin-left:-10px;
+}
+
+.dashboard-list-middle .time-img{
+  margin-top:-4px;
+  width:30px;
+}
+.dashboard-list-middle .time{
+  font-size:1.3em;
+}
+
+.dashboard-list-middle .money{
+  font-size:1.8em;
+}
+
+#dashboard-listing .dashboard-list-pict{
+  width:160px;
+}
+
+#dashboard-listing .dashboard-list-status{
+  text-align:center;
+}
+
+#dashboard-listing .dashboard-list-status .status-img{
+  margin-top:25px;
+  width:100px;
+}
