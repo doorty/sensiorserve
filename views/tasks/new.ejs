@@ -12,11 +12,11 @@
        <a class="brand" href="../">Senior Serve</a>
        <div class="nav-collapse" id="main-menu">
        	<ul class="nav" id="main-menu-left">
-       		<li class=""><a href="/">Home</a></li>
-       		<li class=""><a href="/enablers">Enablers</a></li>
+       		<li class=""><a href="/dashboard">Dashboard</a></li>
+       		<!--<li class=""><a href="/">Home</a></li> -->
        </ul>
        <ul class="nav pull-right">
-       	<li class="active"><a id="swatch-link" href="/report-enabler">Report Enabler</a></li>
+       	<li class="active"><a id="swatch-link" href="#">Create a Task</a></li>
        </ul>
 			</div>
      </div>
@@ -31,8 +31,8 @@
 <header class="jumbotron subhead" id="overview">
   <div class="row">
     <div class="span12">
-      <h1>End Atrocity</h1>
-      <p class="lead">With your help we can <u>identify</u> and <u>spotlight</u> these third-party enablers</p>
+      <h1>Create a Task</h1>
+      <p class="lead">And helpers will offer to assist you.</p>
     </div>
   </div>
 </header>
@@ -42,13 +42,17 @@
 ================================================== -->
 
 <div id="new-listing" class="row-fluid">
-<form class="form-horizontal well" method="post" enctype="multipart/form-data" action="/report-enabler">
+<form class="form-horizontal well" method="post" enctype="multipart/form-data" action="/create-task">
     <fieldset>
-      <legend>You speak for those silenced. Thank you.</legend>
+      <legend>How can I help?</legend>
       <div class="control-group">
-        <label class="control-label" for="headline">Headline</label>
+        <label class="control-label" for="task">Tasks</label>
         <div class="controls">
-          <input type="text" class="input-xxlarge focused" id="headline" name="headline" placeholder="ABC INC. IS SUPPLYING SMALL ARMS TO LIBYA">
+          <select>
+          	<option>task 1</option>
+          	<option>task 2</option>
+          	<option>task 3</option>
+          </select>
         </div>
       </div>
       <div class="control-group">
@@ -58,29 +62,37 @@
         </div>
       </div>
       <div class="control-group">
-        <label class="control-label" for="fileEvidence">Evidence</label>
+        <label class="control-label" for="location">Location</label>
         <div class="controls">
-          <input class="input-file" id="fileEvidence" name="fileEvidence" type="file">
+          <input class="input-xxlarge" id="location" name="location" placeholder="Location"></input>
         </div>
-      </div>   
+      </div> 
       <div class="control-group">
-        <label class="control-label" for="hashtag">Hashtag</label>
+        <label class="control-label" for="location">When</label>
         <div class="controls">
-          <div class="input-prepend">
-            <span class="add-on">#</span>
-            <input class="input-large" id="hashtag" name="hashtag" type="text" placeholder="endatrocity">
-          </div>
+          <input class="input-xxlarge" id="when" name="when" placeholder="Date & Time"></input>
+        </div>
+      </div>  
+      <div class="control-group">
+        <label class="control-label" for="hashtag">Price</label>
+        <div class="controls">
+          <div class="input-prepend input-append">
+					  <span class="add-on">$</span>
+					  <input class="span3" id="appendedPrependedInput" type="text">
+					  <span class="add-on">.00</span>
+					</div>
         </div>
       </div>
+      <!--
       <div class="control-group">
-        <label class="control-label" for="password">Password</label>
+        <label class="control-label" for="email">Email</label>
         <div class="controls">
-          <input type="text" class="input-xlarge" id="password" name="password">
-          <p class="help-block">A password will allow you to edit this later.</p>
+          <input class="input-xxlarge" id="email" name="email" placeholder="Email"></input>
         </div>
       </div>
+      -->
       <div class="form-actions">
-        <button type="submit" class="btn btn-primary">Blow the whistle!</button>
+        <button type="submit" class="btn btn-success">Create Task</button>
         <button type="reset" class="btn">Cancel</button>
       </div>
     </fieldset>
