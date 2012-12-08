@@ -1,0 +1,112 @@
+
+  <!-- Navbar
+    ================================================== -->
+ <div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
+       <a class="brand" href="../">End Atrocity</a>
+       <div class="nav-collapse" id="main-menu">
+       	<ul class="nav" id="main-menu-left">
+       		<li class=""><a href="/">Home</a></li>
+       		<li class="active"><a href="/enablers">Enablers</a></li>
+       </ul>
+       <ul class="nav pull-right">
+       	<li><a id="swatch-link" href="/report-enabler">Report Enabler</a></li>
+       </ul>
+			</div>
+     </div>
+   </div>
+ </div>
+
+<div class="container">
+
+
+<!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="row">
+    <div class="span12">
+      <h1>End Atrocity</h1>
+      <p class="lead">With your help we can <u>identify</u> and <u>spotlight</u> these third-party enablers</p>
+    </div>
+  </div>
+  <div class="subnav">
+    <ul class="nav nav-pills">
+      <li class="active"><a href="#">Top Overall</a></li>
+      <li><a href="#">Tag</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<!-- Listings
+================================================== -->
+
+<div id="enablers" class="row-fluid listings">
+
+	<% for (var i=0, max=enablers.length; i < max; i++) { %>
+	
+		<div class="enabler-listing">
+        <h3><%= enablers[i].headline %></h3>
+        <p><%= enablers[i].description %> <a href="javascript:void(0);">read more...</a></p>
+        <aside class="evidence">
+          <h4>Evidence:</h4>
+          <% for (var j=0, num=enablers.evidence.length; j < num; j++) { %>
+          	<a href="<%= enablers.evidence[i] %>"><%= enablers.evidence[i] %></a>
+          <% } %>
+        </aside>
+        <div class="share well">
+          <div class="fb-like pull-left" data-href="http://endatrocity.com" data-send="false" data-width="450" data-show-faces="true"></div>
+          <a href="https://twitter.com/intent/tweet?button_hashtag=<%= enablers[i].hashtag %>&text=End%20this%20atrocity:" class="twitter-hashtag-button pull-right" data-url="http://endatrocity.com">Tweet <%= enablers[i].hashtag %></a>
+        </div>
+      </div>
+	
+	<% } %>
+
+      <div class="enabler-listing example">
+        <h3>IN THE DEMOCRATIC REPUBLIC OF CONGO, MANY MILITIAS ARE FINANCED BY &ldquo;CONFLICT MINERALS&rdquo;</h3>
+        <p>The sale of key materials that wind up in our phones and computers. While activists and concerned governments have been able to develop some safeguards in the mineral supply chain, the practice continues. <a href="javascript:void(0);">read more...</a></p>
+        <aside class="evidence">
+          <h4>Evidence:</h4>
+          <a href="http://www.humanrightsfirst.org/our-work/crimes-against-humanity/key-documents/commercial-enablers/">Enablers of Mass Atrocities: What Companies Should Know and Do About the Risks of Contributing to the World&lsquo;s Worst Crimes, Human Rights First</a>
+        </aside>
+        <div class="share well">
+          <div class="fb-like pull-left" data-href="http://endatrocity.com" data-send="false" data-width="450" data-show-faces="true"></div>
+          <a href="https://twitter.com/intent/tweet?button_hashtag=EndAtrocity&text=End%20this%20atrocity:" class="twitter-hashtag-button pull-right" data-url="http://endatrocity.com">Tweet #EndAtrocity</a>
+        </div>
+      </div>
+      
+      <div class="enabler-listing example">
+        <h3>IN THE DEMOCRATIC REPUBLIC OF CONGO, MANY MILITIAS ARE FINANCED BY &ldquo;CONFLICT MINERALS&rdquo;</h3>
+        <p>The sale of key materials that wind up in our phones and computers. While activists and concerned governments have been able to develop some safeguards in the mineral supply chain, the practice continues. <a href="javascript:void(0);">read more...</a></p>
+        <aside class="evidence">
+          <h4>Evidence:</h4>
+          <a href="http://www.humanrightsfirst.org/our-work/crimes-against-humanity/key-documents/commercial-enablers/">Enablers of Mass Atrocities: What Companies Should Know and Do About the Risks of Contributing to the World&lsquo;s Worst Crimes, Human Rights First</a>
+        </aside>
+        <div class="share well">
+          <div class="fb-like pull-left" data-href="http://endatrocity.com" data-send="false" data-width="450" data-show-faces="true"></div>
+          <a href="https://twitter.com/intent/tweet?button_hashtag=EndAtrocity&text=End%20this%20atrocity:" class="twitter-hashtag-button pull-right" data-url="http://endatrocity.com">Tweet #EndAtrocity</a>
+        </div>
+      </div>
+      
+      <a class="btn btn-info btn-large btn-block" href="/autrocities">View More Enablers of Autrocities...</a>
+
+    
+    
+  </div>
+
+
+<br><br><br><br>
+
+<!-- Footer
+================================================== -->
+<footer class="footer">
+  <p class="pull-right"><a href="#">Back to top</a></p>
+</footer>
+
+</div><!-- /container -->

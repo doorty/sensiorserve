@@ -1,0 +1,73 @@
+
+  <!-- Navbar
+    ================================================== -->
+ <div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
+       <a class="brand" href="../">End Atrocity</a>
+       <div class="nav-collapse" id="main-menu">
+       	<ul class="nav" id="main-menu-left">
+       		<li class=""><a href="/">Home</a></li>
+       		<li class=""><a href="/enablers">Enablers</a></li>
+       </ul>
+       <ul class="nav pull-right">
+       	<li class="active"><a id="swatch-link" href="/report-enabler">Report Enabler</a></li>
+       </ul>
+			</div>
+     </div>
+   </div>
+ </div>
+
+<div class="container">
+
+
+<!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="row">
+    <div class="span12">
+      <h1>End Atrocity</h1>
+      <p class="lead">With your help we can <u>identify</u> and <u>spotlight</u> these third-party enablers</p>
+    </div>
+  </div>
+</header>
+
+
+<!-- View Listings
+================================================== -->
+<div id="enablers" class="row-fluid listings">
+
+
+<div class="enabler-listing">
+  <h3><%= headline %></h3>
+  <p><%= description %></p>
+  <aside class="evidence">
+    <h4>Evidence:</h4>
+    <ul>
+      <% for(var i=0, max=evidence.length; i < max; i++) {%>
+         <li><a href="#"><%= evidence[i] %></a></li>
+      <% } %>
+    </ul>
+  </aside>
+  <div class="share well">
+    <div class="fb-like pull-left" data-href="http://endatrocity.com" data-send="false" data-width="450" data-show-faces="true"></div>
+    <a href="https://twitter.com/intent/tweet?button_hashtag=EndAtrocity&text=End%20this%20atrocity:" class="twitter-hashtag-button pull-right" data-url="http://endatrocity.com">Tweet <%= hashtag %></a>
+  </div>
+</div>
+      
+</div>
+  
+<br><br><br><br>
+
+<!-- Footer
+================================================== -->
+<footer class="footer">
+  <p class="pull-right"><a href="#">Back to top</a></p>
+</footer>
+
+</div><!-- /container -->
