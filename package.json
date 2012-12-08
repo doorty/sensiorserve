@@ -1,9 +1,9 @@
 {
-  "name": "endatrocity",
-  "subdomain": "endatrocity.app",
+  "name": "senior serve",
+  "subdomain": "sensiorserve.app",
   "domains": [
-    "endatrocity.com",
-    "www.endatrocity.com"
+    "seniorserve.co",
+    "www.seniorserve.co"
   ],
   "scripts": {
     "start": "server.js"
