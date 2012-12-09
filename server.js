@@ -71,7 +71,7 @@ app.post('/create-task', function(req,res){
 	
   var task = new Task({ 
     userId: req.body.userId ? req.body.userId : "1",
-    task:  req.body.task ? req.body.task : "task",
+    task:  req.body.task ? req.body.task : "Medication Reminders",
     description: req.body.description ? req.body.description : "N/A",
     location: req.body.location ? req.body.location : "San Francisco, CA",
     when: req.body.when ? req.body.when : "ASAP",
