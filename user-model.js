@@ -115,7 +115,7 @@ UserSchema.statics.getAuthenticated = function(id, password, cb) {
 
 // my convience methods
 UserSchema.methods.action = function(param) {
-	var result = this.headline + ' with desc ' + this.description;
+	var result = "";
 	return result;
 };
 
