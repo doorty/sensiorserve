@@ -24,6 +24,17 @@ app.get('/', function(req,res){
   res.render('home.ejs', locals);
 });
 
+app.get('/helper-list', function(req,res){
+  locals = {
+    title: 		 'EndAtrocities.com',
+    description: '...',
+    author: 	 'Brent Daugherty',
+    _layoutFile: 'layout.ejs'
+  };
+
+  res.render('tasks/helper-list.ejs', locals);
+});
+
 app.get('/dashboard', function(req,res){
   locals = {
     title: 		 'EndAtrocities.com',
@@ -42,6 +53,17 @@ app.get('/dashboard', function(req,res){
   
 });
 
+app.get('/family-dashboard', function(req,res){
+  locals = {
+    title: 		 'EndAtrocities.com',
+    description: '...',
+    author: 	 'Brent Daugherty',
+    _layoutFile: 'layout.ejs'
+  };
+
+  res.render('tasks/family-dashboard.ejs', locals);
+});
+
 app.get('/create-task', function(req,res){
   locals = {
     title: 		 'EndAtrocities.com',
@@ -50,7 +72,6 @@ app.get('/create-task', function(req,res){
     _layoutFile: 'layout.ejs'
   };
 
-  res.render('tasks/new.ejs', locals);
   res.render('tasks/new.ejs', locals);
 });
 

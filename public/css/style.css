@@ -1,3 +1,8 @@
+.alert-block {
+  width:1117px;
+}
+
+
 .dashboard-img{
   border-radius:5%;
   width:70%;
@@ -34,4 +39,34 @@
 #dashboard-listing .dashboard-list-status .status-img{
   margin-top:25px;
   width:100px;
+}
+
+.helper-list-btn{
+  text-align:center;
+}
+
+.helper-list-btn a{
+  margin-top:45px;
+}
+
+.helper-list-pict img{
+  margin-top:15px;
+  margin-left:17px;
+}
+
+.row-fluid .helper-list-middle {
+  margin-left:-10px;
+}
+.helper-list-middle h4 .star-rater{
+  margin-left:20px;
+  color:rgb(160,40,0);
+}
+
+.helper-list-middle h4 .price{
+  font-size:1.2em;
+  margin-left:20px;
+}
+
+.helper-list-middle p a{
+  margin-left:10px;
 }
