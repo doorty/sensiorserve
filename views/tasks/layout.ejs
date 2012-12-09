@@ -2,10 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title><%= title %></title>
+    <title>SeniorServe.co</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<%= description %>">
-    <meta name="author" content="<%= author %>">
 
     <!-- Le styles -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -25,12 +23,7 @@
     <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
-  </head>
-
-  <body>    
-    <%- body %>
-   
-
+    
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -56,50 +49,16 @@
     <script src="../js/bootstrap-typeahead.js"></script>
     -->
 
-    <script src="../js/enablers.js"></script>
-    
-    <!-- Twitter stuff -->
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-    </script>
-    
-    <!-- Facebook stuff -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        // init the FB JS SDK
-        FB.init({
-          appId      : '100801466752799', // App ID from the App Dashboard
-          channelUrl : '/channel.html', // Channel File for x-domain communication
-          status     : true, // check the login status upon init?
-          cookie     : true, // set sessions cookies to allow your server to access the session?
-          xfbml      : true  // parse XFBML tags on this page?
-        });
-    
-        // Additional initialization code such as adding Event Listeners goes here
-    
-      };
-    
-      // Load the SDK's source Asynchronously
-      (function(d, debug){
-         var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement('script'); js.id = id; js.async = true;
-         js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
-         ref.parentNode.insertBefore(js, ref);
-       }(document, /*debug*/ false));
-    </script>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=100801466752799";
-      fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
     <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
     
-    <!--
+  </head>
+
+  <body>    
+    <%- body %>
+   
+
+        <!--
     <script>
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview'],['_trackPageLoadTime']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

@@ -26,9 +26,6 @@ app.get('/', function(req,res){
 
 app.get('/helper-list', function(req,res){
   locals = {
-    title: 		 'EndAtrocities.com',
-    description: '...',
-    author: 	 'Brent Daugherty',
     _layoutFile: 'layout.ejs'
   };
 
@@ -37,9 +34,6 @@ app.get('/helper-list', function(req,res){
 
 app.get('/dashboard', function(req,res){
   locals = {
-    title: 		 'EndAtrocities.com',
-    description: '...',
-    author: 	 'Brent Daugherty',
     _layoutFile: 'layout.ejs',
     notices: []
   };
@@ -55,9 +49,6 @@ app.get('/dashboard', function(req,res){
 
 app.get('/family-dashboard', function(req,res){
   locals = {
-    title: 		 'EndAtrocities.com',
-    description: '...',
-    author: 	 'Brent Daugherty',
     _layoutFile: 'layout.ejs'
   };
 
@@ -66,9 +57,6 @@ app.get('/family-dashboard', function(req,res){
 
 app.get('/create-task', function(req,res){
   locals = {
-    title: 		 'EndAtrocities.com',
-    description: '...',
-    author: 	 'Brent Daugherty',
     _layoutFile: 'layout.ejs'
   };
 
@@ -77,9 +65,6 @@ app.get('/create-task', function(req,res){
 
 app.post('/create-task', function(req,res){
   locals = {
-    title: 		 'EndAtrocities.com',
-    description: '...',
-    author: 	 'Brent Daugherty',
     _layoutFile: 'layout.ejs',
     notices: []
   };
@@ -100,14 +85,11 @@ app.post('/create-task', function(req,res){
 	
 	locals.notices[0] = "Your task has been added."
 
-  res.render('tasks/dashboard.ejs', locals);
+  res.redirect('tasks/family-dashboard.ejs', locals);
 });
 
 app.get('/complete-task', function(req,res){
   locals = {
-    title: 		 'EndAtrocities.com',
-    description: '...',
-    author: 	 'Brent Daugherty',
     _layoutFile: 'layout.ejs'
   };
 
