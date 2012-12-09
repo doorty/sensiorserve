@@ -29,16 +29,17 @@ app.get('/dashboard', function(req,res){
     title: 		 'EndAtrocities.com',
     description: '...',
     author: 	 'Brent Daugherty',
-    _layoutFile: 'layout.ejs'
+    _layoutFile: 'layout.ejs',
+    notices: []
   };
   
   Task.find({ userId: "1" }, function(err, tasks) {
 		console.log("tasks: " + tasks);
 		locals.tasks = tasks;
-		res.render('enablers/listings.ejs', locals);
+		res.render('tasks/dashboard.ejs', locals);
 	});
 
-  res.render('tasks/dashboard.ejs', locals);
+  
 });
 
 app.get('/create-task', function(req,res){
@@ -58,7 +59,8 @@ app.post('/create-task', function(req,res){
     title: 		 'EndAtrocities.com',
     description: '...',
     author: 	 'Brent Daugherty',
-    _layoutFile: 'layout.ejs'
+    _layoutFile: 'layout.ejs',
+    notices: []
   };
 	
   var task = new Task({ 
@@ -75,7 +77,7 @@ app.post('/create-task', function(req,res){
 	  console.log("saved: " + task._id);
 	});
 	
-	locals.notice = "Your task has been added."
+	locals.notices[0] = "Your task has been added."
 
   res.render('tasks/dashboard.ejs', locals);
 });
