@@ -42,23 +42,24 @@
 ================================================== -->
 
 <div id="new-listing" class="row-fluid">
-<form class="form-horizontal well" method="get" enctype="multipart/form-data" action="/helper-list">
+<form class="form-horizontal well" method="post" enctype="multipart/form-data" action="/create-task">
     <fieldset>
       <legend>How can I help?</legend>
       <div class="control-group">
         <label class="control-label" for="task">Task</label>
         <div class="controls">
-          <select>
-          	<option>task 1</option>
-          	<option>task 2</option>
-          	<option>task 3</option>
+          <select id="task">
+          	<option value="" selected="selected"></option>
+          	<option value="task 1">task 1</option>
+          	<option value="task 1">task 2</option>
+          	<option value="task 1">task 3</option>
           </select>
         </div>
       </div>
       <div class="control-group">
         <label class="control-label" for="description">Description</label>
         <div class="controls">
-          <textarea class="input-xxlarge" id="description" name="description" rows="3" placeholder="On several occasions I've witnessed..."></textarea>
+          <textarea class="input-xxlarge" id="description" name="description" rows="3" placeholder="I need to pick up a few things from the store..."></textarea>
         </div>
       </div>
       <div class="control-group">
@@ -78,7 +79,7 @@
         <div class="controls">
           <div class="input-prepend input-append">
 					  <span class="add-on">$</span>
-					  <input class="span3" id="appendedPrependedInput" type="text">
+					  <input class="span3" id="price" name="price" type="text">
 					  <span class="add-on">.00</span>
 					</div>
         </div>

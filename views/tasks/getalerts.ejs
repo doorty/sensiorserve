@@ -1,0 +1,92 @@
+
+  <!-- Navbar
+    ================================================== -->
+ <div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+       <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </a>
+       <a class="brand" href="../">Senior Serve</a>
+<!--       
+			<div class="nav-collapse" id="main-menu">
+       	<ul class="nav" id="main-menu-left">
+       		<li class=""><a href="/dashboard">Dashboard</a></li>
+       		<li class=""><a href="/">Home</a></li>
+       </ul>
+       <ul class="nav pull-right">
+       	<li class="active"><a id="swatch-link" href="#">Create a Task</a></li>
+       </ul>
+			</div>
+-->
+     </div>
+   </div>
+ </div>
+
+<div class="container">
+
+
+<!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="row">
+    <div class="span12">
+      <h1>Complete a Task</h1>
+      <p class="lead">You will be notified when there is a matching task.</p>
+    </div>
+  </div>
+</header>
+
+
+<!-- New Listings
+================================================== -->
+
+<div id="new-listing" class="row-fluid">
+<form class="form-horizontal well" method="get" enctype="multipart/form-data" action="/helper-list">
+    <fieldset>
+      <legend>Which tasks are you willing to do?</legend>
+      <div class="control-group">
+        <label class="control-label" for="task">Tasks</label>
+        <div class="controls">
+	        <label class="checkbox">
+			      <input type="checkbox"> Task 1
+			    </label>
+			    <label class="checkbox">
+			      <input type="checkbox"> Task 2
+			    </label>
+			    <label class="checkbox">
+			      <input type="checkbox"> Task 3
+			    </label>
+			  </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="description">Description</label>
+        <div class="controls">
+          <textarea class="input-xxlarge" id="description" name="description" rows="3" placeholder="I've been cleaning and running errands for 5 years..."></textarea>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="email">Email</label>
+        <div class="controls">
+          <input class="input-xxlarge" id="email" name="email" placeholder="email@address.com"></input>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-success">Sign up</button>
+        <button type="reset" class="btn">Cancel</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+  
+<br><br><br><br>
+
+<!-- Footer
+================================================== -->
+<footer class="footer">
+  <p class="pull-right"><a href="#">Back to top</a></p>
+</footer>
+
+</div><!-- /container -->

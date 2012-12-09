@@ -1,14 +1,13 @@
 {
-  "name": "senior serve",
+  "name": "seniorserve",
   "subdomain": "sensiorserve.app",
   "domains": [
-    "seniorserve.co",
-    "www.seniorserve.co"
+    "demo.seniorserve.co"
   ],
   "scripts": {
     "start": "server.js"
   },
-  "version": "0.0.0-10",
+  "version": "0.0.0-1",
   "dependencies": {
     "express": "3.0.x",
     "ejs": "x.x.x",

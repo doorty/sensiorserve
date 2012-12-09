@@ -85,7 +85,7 @@ app.post('/create-task', function(req,res){
 	
 	locals.notices[0] = "Your task has been added."
 
-  res.redirect('tasks/family-dashboard.ejs', locals);
+  res.redirect('helper-list');
 });
 
 app.get('/complete-task', function(req,res){
@@ -93,7 +93,7 @@ app.get('/complete-task', function(req,res){
     _layoutFile: 'layout.ejs'
   };
 
-  res.render('tasks/getalert.ejs', locals);
+  res.render('tasks/getalerts.ejs', locals);
 });
 
 /* The 404 Route (ALWAYS Keep this as the last route) */
