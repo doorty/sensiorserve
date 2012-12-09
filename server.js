@@ -50,6 +50,7 @@ app.get('/create-task', function(req,res){
   };
 
   res.render('tasks/new.ejs', locals);
+  res.render('tasks/new.ejs', locals);
 });
 
 app.post('/create-task', function(req,res){

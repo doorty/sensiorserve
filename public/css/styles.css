@@ -88,3 +88,7 @@ body {
 @media (max-width: 480px) {
   
 }
+
+.dashboard-img{
+  border-radius:3%;
+}
